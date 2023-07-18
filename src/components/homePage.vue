@@ -10,15 +10,24 @@
 <!--              </el-dropdown-menu>-->
 <!--          </template>-->
 <!--      </dropdown>-->
-      <div><el-input v-model="inputA" placeholder="Please input"/></div>
+      <div><el-input v-model="input" placeholder="Please input"/></div>
+      <el-text class="mx-1" type="danger">Price {{text}}</el-text>
+      <div><el-button type="primary" @click="useBut()">Extract</el-button></div>
 
-<!--      <div><el-button type="primary">Extract</el-button></div>-->
   </div>
 </template>
 
 <script lang="ts" setup>
 import { ref } from 'vue'
-const inputA = ref('')
+const input = ref('')
+const text = ref('no')
+const useBut = [
+
+]
+function reverseMessage() {
+
+}
+
 </script>
 
 <style scoped>
