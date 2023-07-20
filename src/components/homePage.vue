@@ -21,9 +21,12 @@
 import { ref } from 'vue'
 const input = ref('')
 const text = ref('no')
-const useBut = [
+function useBut(){
 
-]
+    // console.log('123123')
+    console.log(this.input)
+    this.text = this.input
+}
 function reverseMessage() {
 
 }
