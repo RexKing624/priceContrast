@@ -24,11 +24,11 @@ import { ref } from 'vue'
 const input = ref('')
 const text = ref('no')
 function useBut(){
-
-    // console.log('123123')
-    console.log(this.input)
-    this.text = this.input
-    window.location.href =this.input
+  // console.log('123123')
+  // console.log(this.input)
+  this.text = this.input
+  // console.log(this)
+    // window.location.href =this.input
     console.log(testHtml)
     // location.replace =this.input
 
